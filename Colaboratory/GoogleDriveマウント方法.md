@@ -1,3 +1,19 @@
+# 1. 新しいお作法
+[ここ](https://qiita.com/k_uekado/items/45b76f9a6f920bf0f786)参考にしました。
+```
+from google.colab import drive
+drive.mount('/content/drive')
+```
+* 上記を実行すると、1回だけ認証作業が必要
+* その後に以下を実行して、ディレクトリの中身を確認した
+```
+!ls "drive/My Drive/"
+```
+
+* 中身が確認できれば、OK.
+
+# 2. 古いお作法
+* こっちの2段階認証は使わず…
 ## 参照記事
 [ここ](https://uepon.hatenadiary.com/entry/2018/03/21/180329)参考にしました。
 
