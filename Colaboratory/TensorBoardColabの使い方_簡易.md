@@ -1,4 +1,6 @@
 [ここ](https://colab.research.google.com/github/tensorflow/tensorboard/blob/master/docs/r2/tensorboard_quickstart.ipynb)を参考にした。
+* リンク切れてる…。
+* もともとは、[このツイート](https://twitter.com/random_forests/status/1100543755747241985?s=12)だったんだが、非公開にしちゃったのかな？
 
 ```          
 !pip install -q tf-nightly-2.0-preview
