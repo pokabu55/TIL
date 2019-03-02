@@ -1,4 +1,5 @@
 ### 場合別の使い分け
+[このQiita記事](https://qiita.com/GushiSnow/items/6808121ba54fb2e53497)を参考にしました。
 
 #### ざっくりと傾向を把握したい時に使用
 * SCALARS
@@ -12,3 +13,5 @@
 #### モデルの構造を確認したい
 * GRAPH
 
+![サンプル画像](https://github.com/pokabu55/TIL/blob/master/Colaboratory/Screenshot%20from%202019-03-02%2019-22-13.png)
+      
