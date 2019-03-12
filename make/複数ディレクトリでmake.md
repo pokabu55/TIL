@@ -34,7 +34,7 @@ DEPS   = $(SRCS:.cpp=.d)
 TILDE  = $(SRCS:.cpp=.cpp~)
 
 .cpp.o:
-	$(GCC) $(CFLAGS) -c $< -o $@ -I$(INCLUDE)
+	$(GCC) $(CFLAGS) -c $< -o $@ $(INCLUDE)
 
 $(TARGET): $(OBJS)
 	$(GCC) $(CFLAGS) -o $@ $+
