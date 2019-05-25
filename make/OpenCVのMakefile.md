@@ -1,4 +1,8 @@
 # OpenCV 用の Makefile の書き方
+## 前提条件
+* Ubuntu 18.04
+* OpenCV のPATHが通っている。
+
 ## ベースのMakefile
 * ベースとなる Makefile は、[「シンプルで応用の効くmakefileとその解説」](http://urin.github.io/posts/2013/simple-makefile-for-clang)を参考にしました。
 
