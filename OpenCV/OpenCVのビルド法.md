@@ -61,6 +61,7 @@ $ sudo apt-get install cmake git libgtk2.0-dev pkg-config libavcodec-dev libavfo
 ```
 * だいたい、[2]を包含している[1]を実行した。ちなみに[1]は先に、`sudo su -` してます。
 * ただし、libjasper-dev が見つからないと言ってきた。JPEG2000のRead/Writeに必要らしいが、使わないので無視した。
+* また、libpng12-dev これも見つからないと言ってきた。`sudo apt-get install libpng-dev` とすればインストールできるかもだが、やってません。
 
 ### 3.3 ダウンロード
 * [OpenCVのReleaseページ](https://opencv.org/releases/)にアクセス、ダウンロード
