@@ -53,7 +53,9 @@ apt-get -y install git gfortran python3-dev
 apt-get -y install libjpeg8-dev libjasper-dev libpng12-dev libavcodec-dev libavformat-dev libswscale-dev libdc1394-22-dev libxine2-dev libv4l-dev
 apt-get -y install libjpeg-dev libpng-dev libtiff-dev libtbb-dev
 apt-get -y install libavcodec-dev libavformat-dev libswscale-dev libv4l-dev libatlas-base-dev libxvidcore-dev libx264-dev libgtk-3-dev
+apt-get install libgtk2.0-dev
 ```
+* USBカメラ使うのに、libgtk2.0-devを追記
 * [2]の方では、下記のみ。
 ```
 $ sudo apt-get install build-essential
@@ -81,7 +83,8 @@ $ sudo apt-get install cmake git libgtk2.0-dev pkg-config libavcodec-dev libavfo
   * 解凍した `/opencv` に移動し`mkdir build`で、ビルド用のディレクトリを作り、そこに移動します。`cd build`
 * cmake
   * `/build` 内で下記コマンドを打つ
-  * `cmake -D CMAKE_BUILD_TYPE=RELEASE -D CMAKE_INSTALL_PREFIX=/usr/local -D WITH_V4L=OFF ..`
+  * `cmake -D CMAKE_BUILD_TYPE=RELEASE -D CMAKE_INSTALL_PREFIX=/usr/local -D WITH_V4L=ON ..`
+  * USBカメラ使うのに、WITH_V4L=ON に訂正
   * 上記で`/usr/local`にビルド生成物が作られます
   * 今回は、[1][2]でも書いてあるような、contribのビルドはパスしました。
   * 詳しくはここの[issue](https://github.com/opencv/opencv/issues/6262)が参考になります。
