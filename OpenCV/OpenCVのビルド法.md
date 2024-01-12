@@ -63,7 +63,8 @@ $ sudo apt-get install cmake git libgtk2.0-dev pkg-config libavcodec-dev libavfo
 ```
 * だいたい、[2]を包含している[1]を実行した。ちなみに[1]は先に、`sudo su -` してます。
 * ただし、libjasper-dev が見つからないと言ってきた。JPEG2000のRead/Writeに必要らしいが、使わないので無視した。
-* また、libpng12-dev これも見つからないと言ってきた。`sudo apt-get install libpng-dev` とすればインストールできるかもだが、やってません。
+* また、libpng12-dev, libdc1394-22-dev も見つからないと言ってきた。`sudo apt-get install libpng-dev` とすればインストールできるかもだが、やってません。
+* とりあえず、見つからなかった上記３つのパッケージはインストールから除外した。
 
 ### 3.3 ダウンロード
 * [OpenCVのReleaseページ](https://opencv.org/releases/)にアクセス、ダウンロード
@@ -98,6 +99,7 @@ $ sudo apt-get install cmake git libgtk2.0-dev pkg-config libavcodec-dev libavfo
   * 意味合いとしては、makeしたファイル群をディレクトリにコピーするってことです。
 * configファイルの設定
   * この作業、よく分かってないが…[1]に書いてあった。
+  * 下記コマンドは、`sudo su -`の下でやるか、sudo つけて実行すること。じゃないと権限がないと怒られるため。
 ```
 echo /usr/local/lib > /etc/ld.so.conf.d/opencv.conf
 ldconfig -v
